@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+	 <meta charset="utf-8"> 
+     
+<!-- 		<link rel = "stylesheet" href="dist/css/login.css"> -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Favicon icon -->
+		<link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Gayathri:400,700&display=swap" rel="stylesheet">
+		<title>DemoLog - SignUp or Login</title>
+       
+       <style type="text/css">
+
+       		body {
+       			background-image: url("assets/images/b1.jpg");
+       			background-size: cover;
+       			background-color: #c9c9c3;
+       			background-repeat: no-repeat;
+       			height:100%;
+    		/*	background-position: center;*/
+    			overflow: hidden;
+    			font:600 16px/18px  'Gayathri', sans-serif;
+       		}
+			       	.centered {
+			    width: 500px;
+			    height: 400px;
+			    top: 50%;
+			    left: 50%;
+			    position: absolute;
+			    margin-top: -200px;
+			    margin-left: -250px;
+			    background-color:#F0F3F4;
+			    box-shadow: 10px 10px 7px #201C19;
+			}
+			.input{
+					width:70%;
+					display:block;
+					color:rgb(12, 23, 232);
+					border:none;
+					padding:15px 20px;
+					border-radius:25px;
+					background:rgba(9, 174, 224, 0.1);
+				}
+			.hr {
+					height:2px;
+					margin:20px 0 20px 0;
+					background:#c9c9c3;
+			}
+			.button {
+				text-transform:uppercase;
+				text-decoration-color: white;
+					width:30%;
+				color: white;
+				display:block;
+				border:none;
+				padding:15px 20px;
+				border-radius:25px;
+				background: #7c77b2;
+				text-decoration-color: white;
+
+			}
+			.button:hover {
+				background: white;
+				color: #7c77b2;
+				border: 1px solid #7c77b2;
+			}
+
+		.logo-text {
+				width: 100%;
+				top:0;
+				position: fixed;
+				display: -webkit-box;
+				-webkit-box-flex: 1;
+				height: 60px;
+				background: white;
+				-webkit-box-shadow: rgb(110, 110, 110) 8px 8px 10px;
+		}
+
+       </style>
+		
+    </head>
+
+
+    <body>
+		<!--header -->
+			<span class="logo-text">
+                             <!-- dark Logo text -->
+                             <img src="assets/images/logo-text.png" alt="homepage" class="light-logo" />
+                            
+            </span>
+
+          <div class="centered">
+		<!--Reset Password inputs -->
+			<div align="center">
+				<br><br>
+				<div align="center">
+					<h2 style=" color: #c3c0e8;"><strong>RECOVER PASSWORD</strong></h2>
+				</div>
+
+				<div class="hr"></div>
+				<br><br><br>
+		          	<div class="group">
+						<div>
+						<label for="user" class="label" style=" color: #7c77b2;"> Enter your email</label>
+						<input id="email" type="email" class="input" data-type="email" placeholder="Your email">
+						</div>
+						<br><br>
+						<div class="group">
+							<a href="index.html" style="text-decoration: none;"><input type="submit" id="sent" class="button" value="Send email" href="login.html"></a>
+						</div>
+		          	
+		          	</div>
+
+		     </div>
+</div>
+    </body>
+
+
+
+
+    <script type="text/javascript" >
+    	var sent = function(){
+    		alert("Reset link sent to email");
+    	}
+
+    document.getElementById("sent").addEventListener("click", sent);
+    </script>
+</html>
